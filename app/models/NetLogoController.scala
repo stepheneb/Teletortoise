@@ -14,7 +14,7 @@ class NetLogoController extends Actor {
   private var currentState: Mirroring.State = Map()
 
   private val modelsPath = "public/models/"
-  private val modelName  = "Wolf Sheep Predation"
+  private val modelName  = "GCCModel-v3"
   private lazy val ws    = workspace(new File(modelsPath + modelName + ".nlogo"))
 
   private val executor = Akka.system.actorOf(Props(new BackgroundExecutor))
